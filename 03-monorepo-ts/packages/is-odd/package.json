@@ -1,0 +1,16 @@
+{
+  "name": "@oce/is-odd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "rm -rf dist/* && tsc -p tsconfig.pkg.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@acme-corp/is-even": "^0.0.2"
+  }
+}

@@ -129,3 +129,40 @@ This is the most crucial part of the whole setup. Insert below inside your root 
 ```
 
 https://dev.to/limal/simplify-your-monorepo-with-npm-7-workspaces-5gmj
+
+---
+
+## TS monorepo for @scoped/packages [03-monorepo-ts]
+
+Step 1: Setting up the top-level NPM project
+
+```
+echo '{"private": true}' >> package.json
+```
+
+Install
+
+```
+npm install --save-dev typescript @types/node jest ts-jest @types/jest
+```
+
+Step 2: Create scoped packages in workspaces
+
+NPM's documentation shows how to create packages in a work space. To create a scoped workspace package, use the --scope option. For demonstration purposes we're going to re-create the is-even and is-odd packages with the same dependency setup they have. The is-odd will depend on the is-even package to implement its logic.
+
+```
+npm init --scope=@oce -y -w ./packages/is-even
+npm init --scope=@oce -y -w ./packages/is-odd
+```
+
+```
+npm install @oce/is-even -w ./packages/is-odd
+```
+
+Step 3: Configuring out TypeScript setup
+
+```
+npm run compile -ws
+```
+
+https://blog.frankdejonge.nl/setting-up-a-typescript-mono-repo-for-scoped-packages/

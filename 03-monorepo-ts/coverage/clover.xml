@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1639036785611" clover="3.2.0">
+  <project timestamp="1639036785611" name="All files">
+    <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="7" coveredelements="4" complexity="0" loc="5" ncloc="5" packages="2" files="2" classes="2"/>
+    <package name="is-even">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/oscar.oceguera/Documents/repos/examples/workspaces-playground/03-monorepo-ts/packages/is-even/index.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="is-odd">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/Users/oscar.oceguera/Documents/repos/examples/workspaces-playground/03-monorepo-ts/packages/is-odd/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

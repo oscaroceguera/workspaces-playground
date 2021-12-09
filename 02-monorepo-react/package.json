@@ -1,0 +1,8 @@
+{
+  "name": "@oce/monorepo-react",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "./common/*"
+  ]
+}

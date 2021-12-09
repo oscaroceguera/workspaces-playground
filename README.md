@@ -99,3 +99,33 @@ npm install eslint --workspaces
 https://ruanmartinelli.com/posts/npm-7-workspaces-1
 
 ---
+
+## Simplify your monorepo with npm7 workspaces [02-monorepo-react]
+
+**Monorepo use cases**
+
+A monorepo is a term describing a single git repository that contains many projects.
+
+The most common reason to set up a monorepo is to streamline work within a dev team that maintains multiple apps that are using a shared piece of code, for example a common User Interface library.
+
+Imagine a team that develops two React apps that shares some common UI elements like inputs, selectors, accordions, etc. It would be nice to extract that UI in form of React components and prepare building blocks that are ready to use for all members of the team.
+
+Apart from that it's just more convenient to have all your source files opened in a single IDE instance. You can jump from project to project without switching windows on your desktop.
+
+**Defining workspaces in npm 7**
+I am prefixing all packages' names with `@oce` so they will be distinctive from the official npm registry. Just change it to yours.
+
+This is the most crucial part of the whole setup. Insert below inside your root folder's package.json to set up a monorepo.
+
+```
+{
+    "name": "@oce/monorepo-react",
+    "private": true,
+    "version": "1.0.0",
+    "workspaces": [
+        "./common/*"
+    ]
+}
+```
+
+https://dev.to/limal/simplify-your-monorepo-with-npm-7-workspaces-5gmj

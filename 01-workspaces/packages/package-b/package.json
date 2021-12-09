@@ -1,0 +1,19 @@
+{
+  "name": "package-b",
+  "version": "1.0.0",
+  "description": "package b",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo 'all test passed!'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tap": "^15.1.5"
+  },
+  "dependencies": {
+    "eslint": "^8.4.1"
+  }
+}

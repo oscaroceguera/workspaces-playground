@@ -1,0 +1,17 @@
+{
+  "name": "package-a",
+  "version": "1.0.0",
+  "description": "packaga b",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo 'all test passed!'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.4.1",
+    "lodash": "^4.17.21"
+  }
+}
